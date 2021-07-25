@@ -11,16 +11,13 @@ public class ItemScript : Interactable
     [SerializeField] float moveTime;
 
     Transform location;
-
     Transform tableLocation;
 
     bool onTable;
-
+    bool hold;
 
     Vector3 currentPos;
 
-    [SerializeField] bool hold;
-    // Start is called before the first frame update
     void Start()
     {
         currentPos = this.transform.position;

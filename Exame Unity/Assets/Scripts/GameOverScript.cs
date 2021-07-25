@@ -26,27 +26,7 @@ public class GameOverScript : MonoBehaviour
             camPov.m_HorizontalAxis.Value = Mathf.Lerp(camPov.m_HorizontalAxis.Value, gameOverCameraRotation.x, 2 * Time.deltaTime);
             camPov.m_VerticalAxis.Value = Mathf.Lerp(camPov.m_VerticalAxis.Value, gameOverCameraRotation.y, 2 * Time.deltaTime);
 
-
             yield return null;
         }
-        //yield return new WaitForSeconds(1f);
-
-        //timeToMove = 0;
-        //while (timeToMove < 2)
-        //{
-        //    print(timeToMove + "tempo total");
-        //    print(timeToMove);
-        //    timeToMove += Time.deltaTime;
-        //    yield return null;
-
-        //}
-        //timeToMove = 0;
-
-        //while (timeToMove < 2)
-        //{
-        //    timeToMove += Time.deltaTime;
-        //    yield return null;
-
-        //}
     }
 }

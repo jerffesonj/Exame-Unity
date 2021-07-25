@@ -24,9 +24,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartGame());
-
-        //Cursor.lockState = CursorLockMode.Confined;
-        //Cursor.visible = false;
     }
 
     IEnumerator StartGame()
